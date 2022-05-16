@@ -1,0 +1,75 @@
+body{
+
+    background-color: #5fcec0;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	
+	
+}
+
+.title{
+	position:relative;
+	margin: auto;
+	color: #5fcec0;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	text-align: center;
+	margin-top: 30%;
+	margin-bottom: 10px;
+}
+
+.username{
+	width: 200px;
+	height: 30px;
+	color: black;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	margin: 20px;	
+}
+
+.password{
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	width: 200px;
+	height: 30px;
+	margin: 20px;
+	
+}
+
+
+.login input{
+	align-content: center;
+    display:block;
+
+
+}
+.send_btn{
+	margin: 20px;
+	border:none;
+	background-color:#DCDCDC;
+	width: 200px;
+	height: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius:  10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	
+	
+}
+.login_tb{
+	background-color: white;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	width: 50%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 40px;
+	opacity: .9;
+}

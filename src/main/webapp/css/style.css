@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	height: 100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+
+	
+
+}
+
+.menu{
+	position: absolute;
+	left:150px;
+}
+
+
+.navbar{
+	background-color:#5fcec0;
+	display:flex;
+	margin:0;
+	padding: 0;
+	height: 90px;
+	width: 100%;
+	
+	align-items: center;
+	justify-content: space-between;
+	z-index: 5;
+	}
+#logo{
+	margin: 50px;
+	
+	}
+.Signout{
+
+	
+	margin-right: 30px;
+	
+	
+}
+.Signoutbtn{
+	float: right;
+	width: 80PX;
+	height: 30PX;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+ 	background-color: white;
+	border: none;
+   
+  
+    
+	vertical-align:inherit;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.Signoutbtn a{
+	color: #5fcec0;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	text-align: center;
+	
+	
+}
+
+.dropbtn {
+    background-color: #5fcec0;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+
+}
+
+.dropdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	display: inline-block;
+   
+}
+
+.dropdown-content {
+	
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 100;
+}
+
+.dropdown-content a {
+	background-color: #FFFFFF;
+    color: dimgray;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color:#E4E4E4;
+	color:black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3ebfaf;
+}
+.personalinformation{
+	align-items: center; 
+	margin-left:40px;
+	display:flex;
+}
+.Employee{
+	position: absolute;
+	left:600px;
+	
+}
+.personalinformation p{
+	
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	color: white;
+	
+	flex-direction:row;
+	margin-right:10px;
+	
+}
+
+
+.welcome{
+	height:70%;
+	display: flex;
+	background:#DDDDDD;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	
+
+	
+}
+.welcome p{
+	font-size: 60px;
+	height: 100%;
+	
+	
+}
+
+.maintb{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	z-index: 0;
+	
+}
+input{
+	display: block;
+	margin: 20px;
+	width: 200px;
+	height: 20px;
+	
+}
+
+.title{
+	position:relative;
+	margin: 10px;
+	color: #5fcec0;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	text-align: center;
+	
+	
+}
+
+.send_btn{
+	align-self: center;
+	margin: 20px;
+	border:none;
+	background-color:#DCDCDC;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B";
+	
+	
+}
+.day_tb{
+	display:flex;
+	justify-content: center;
+
+
+}
+select{
+	align-self:center;
+	width: 200px;
+	height: 30px;
+	
+}
+.calender{
+	margin: 10px 20px 10px 20px;
+	background-color: gray;
+	border-radius: 30px;
+	height: 400px;
+	width: 400px;
+	padding: 20px;
+	position:relative;
+	overflow: hidden;
+}
+.calender-header{
+	margin: 0;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	
+}
+.month-picker{
+	border-radius: 10px;
+	cursor: pointer;
+	
+}
+
+.year-picker{
+	display: flex;
+	align-items: center;
+	margin-top: 0px;
+}
+.year-change{
+	width: 200px;
+	border-radius: 50%;
+	display:grid;
+	margin: 0 10px;
+	cursor: pointer;
+	plac-items: center;
+	
+}
+.calender-week-day{
+	height: 50px;
+	display: grid;
+	grid-template-columns:repeat(7,60px);
+	font-weight: 600;
+}
+.calender-days{
+	display: grid;
+	grid-template-columns: repeat(7,80px);
+	gap:2px;
+	font-size: 25px;
+	color: white;
+	
+}
+.calender-days div{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: 8px;
+	position: relative;
+	cursor:pointer;
+	animation: to-top 1s forwards;
+	border-radius: 50%;
+	
+	
+}
+
+.mainspace{
+	position:absolute;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 200px;
+	
+}
+.mainspace select{
+	align-self:
+	margin-top: 10px;
+	margin-bottom: 20px;
+	
+}
+.calenderspace{
+	display: flex;
+	justify-content: center;
+	
+}
+
+table {
+		width: 900px;
+		margin: 100px auto;
+		border-collapse: collapse;
+		text-align: center;
+		padding:10px 2px;
+	}
+
+td,
+th {
+		padding:10px;
+		border: 0px solid #333;
+	}
+
+thead tr {
+		padding:10px;
+		height: 40px;
+		background-color:#565656;
+
+	}
