@@ -15,7 +15,7 @@
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 	    try {
-	      String url = "jdbc:mysql://localhost:3306/fp";
+	      String url = "jdbc:mysql://localhost:3306/fp"; //mysql DB¦WºÙ
 	      String user = "root";
 	      String password = "";
 	      String driver = "com.mysql.jdbc.Driver";
