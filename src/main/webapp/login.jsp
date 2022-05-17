@@ -32,6 +32,10 @@
 	      	String ROLE_TYPE = rs.getString("ROLE_TYPE");
 	      	
 	        out.println("<script type='text/javascript'>alert('歡迎 " + USER_NAME + " 登入');</script>");
+	        
+	        if(ROLE_TYPE.substring(0,1).equals("A")){
+	        	out.println("<script>window.location='manager.jsp'</script>");
+	        }
 	        //JOptionPane.showMessageDialog(null, "歡迎 " + USER_NAME + " 登入");
 	      }else{
 	    	out.println("<script type='text/javascript'>alert('登入失敗');</script>");
