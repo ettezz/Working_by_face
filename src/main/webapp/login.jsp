@@ -17,7 +17,7 @@
 	    try {
 	      String url = "jdbc:mysql://localhost:3306/fp"; //mysql DB名稱
 	      String user = "root";
-	      String password = "";
+	      String password = new Scanner(System.in).next(); //去eclipse console輸入mysql密碼 不輸入會無法去sql抓資料(暫時使用)
 	      String driver = "com.mysql.jdbc.Driver";
 	      Class.forName(driver);
 	      con = DriverManager.getConnection(url, user, password);
@@ -32,10 +32,8 @@
 	      	String ROLE_TYPE = rs.getString("ROLE_TYPE");
 	      	
 	        out.println("<script type='text/javascript'>alert('歡迎 " + USER_NAME + " 登入');</script>");
+	        out.println("<script>window.location='entryPage.jsp'</script>");
 	        
-	        if(ROLE_TYPE.substring(0,1).equals("A")){
-	        	out.println("<script>window.location='manager.jsp'</script>");
-	        }
 	        //JOptionPane.showMessageDialog(null, "歡迎 " + USER_NAME + " 登入");
 	      }else{
 	    	out.println("<script type='text/javascript'>alert('登入失敗');</script>");
@@ -101,7 +99,7 @@
 		            <!-- <label for="password" id="password" class = "password">使用者密碼</label>  -->
 		        <input type="password" placeholder="請輸入密碼" name="password"  id="password" class="password">
 		    
-		        <input type="submit" class="send_btn" id="loginBtn" >
+		        <input type="submit" class="send_btn" id="loginBtn" value="登入">
 		
 		    </form>
 		</div>
