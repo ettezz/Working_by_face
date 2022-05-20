@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Scanner;
 
 public class US001Model {
 	
@@ -19,11 +20,11 @@ public class US001Model {
 	    try {
 	      String url = "jdbc:mysql://localhost:3306/fp";
 	      String user = "root";
-	      String password = "ckj0508";
+	      String password = "ettezz2018";
 	      String driver = "com.mysql.cj.jdbc.Driver";
 	      Class.forName(driver);
 	      con = DriverManager.getConnection(url, user, password);
-	      String sql = "SELECT USER_ID, USER_NAME, PHONE, ADDRESS, ROLE_TYPE FROM FP_USERS WHERE USER_ID = ? AND PASSWD = ? ";
+	      String sql = "SELECT USER_ID, USER_NAME, PHONE, ADDRESS, ROLE_TYPE, DEPARTMENT FROM FP_USERS WHERE USER_ID = ? AND PASSWD = ? ";
 	      stmt = con.prepareStatement(sql);
 	      stmt.setString(1, userId);
 	      stmt.setString(2, passwd);
@@ -35,8 +36,9 @@ public class US001Model {
 	      	int PHONE = rs.getInt("PHONE");
 	      	String ADDRESS = rs.getString("ADDRESS");
 	      	String ROLE_TYPE = rs.getString("ROLE_TYPE");
+	      	String DEPARTMENT = rs.getString("DEPARTMENT");
 	      	
-	      	userModel = new User(USER_ID, USER_NAME, PHONE, ADDRESS, ROLE_TYPE);
+	      	userModel = new User(USER_ID, USER_NAME, PHONE, ADDRESS, ROLE_TYPE, DEPARTMENT);
 	      }
 	      return userModel;
 	    } catch (Exception ex) {

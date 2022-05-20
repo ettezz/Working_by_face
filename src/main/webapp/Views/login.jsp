@@ -15,16 +15,18 @@
 			int USER_PHONE = user.getPhone();
 			String USER_ADDRESS = user.getAddress();
 			String ROLE_TYPE = user.getRoleType();
+			String DEPARTMENT = user.getDepartment();
 			
 			session.setAttribute("USER_ID", USER_ID);
 			session.setAttribute("USER_NAME", USER_NAME);
 			session.setAttribute("USER_PHONE", USER_PHONE);
 			session.setAttribute("USER_ADDRESS", USER_ADDRESS);
 			session.setAttribute("ROLE_TYPE", ROLE_TYPE);
+			session.setAttribute("DEPARTMENT", DEPARTMENT);
 			
 			out.println("<script type='text/javascript'>alert('歡迎 " + USER_NAME + " 登入');</script>");
 			//跳轉網頁
-			//out.println("<script type='text/javascript'>window.location.href='跳轉網址';</script>");
+			out.println("<script type='text/javascript'>window.location.href='./Views/entryPage.jsp';</script>");
 		}
 		else{
 			out.println("<script type='text/javascript'>alert('登入失敗');</script>");
@@ -76,7 +78,7 @@
 		            <!-- <label for="password" id="password" class = "password">使用者密碼</label>  -->
 		        <input type="password" placeholder="請輸入密碼" name="password"  id="password" class="password">
 		    
-		        <input type="submit" class="send_btn" id="loginBtn" >
+		        <input type="submit" class="send_btn" id="loginBtn" value = "登入">
 		
 		    </form>
 		</div>

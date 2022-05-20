@@ -6,17 +6,19 @@ public class User {
 	private int phone;
 	private String address;
 	private String roleType;
+	private String department;
 	
 	public User(){
 		
 	}
 	
-	public User(String userId, String userName, int phone, String address, String roleType){
+	public User(String userId, String userName, int phone, String address, String roleType, String department){
 		this.userId = userId;
 		this.userName = userName;
 		this.phone = phone;
 		this.address = address;
 		this.roleType = roleType;
+		this.department = department;
 	}
 	
 	public String getUserId() {
@@ -59,4 +61,13 @@ public class User {
 		this.roleType = roleType;
 	}
 
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	
 }

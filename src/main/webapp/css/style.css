@@ -289,7 +289,7 @@ select{
 	
 }
 .mainspace select{
-	align-self:
+	align-self: auto;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	
