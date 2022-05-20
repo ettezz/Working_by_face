@@ -1,6 +1,6 @@
 
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="java.sql.*" %>
 <%@page import="java.util.*" %>
 <%@page import="javax.swing.*" %>
@@ -24,22 +24,22 @@
 			session.setAttribute("ROLE_TYPE", ROLE_TYPE);
 			session.setAttribute("DEPARTMENT", DEPARTMENT);
 			
-			out.println("<script type='text/javascript'>alert('Åwªï " + USER_NAME + " µn¤J');</script>");
-			//¸õÂàºô­¶
+			out.println("<script type='text/javascript'>alert('æ­¡è¿ " + USER_NAME + " ç™»å…¥');</script>");
+			//è·³è½‰ç¶²é 
 			out.println("<script type='text/javascript'>window.location.href='./Views/entryPage.jsp';</script>");
 		}
 		else{
-			out.println("<script type='text/javascript'>alert('µn¤J¥¢±Ñ');</script>");
+			out.println("<script type='text/javascript'>alert('ç™»å…¥å¤±æ•—');</script>");
 		}
 	}
 	
 %>
 <html>
 	<head>
-		<meta charset="BIG5">
+		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login-style.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<title>µn¤J</title>
+		<title>ç™»å…¥</title>
 	</head>
 	<script type="text/javascript">
         /*$(document).ready(function() {
@@ -71,14 +71,14 @@
 		<div class="logo"><img src="${pageContext.request.contextPath}/image/logo.png" alt=""></div>
 		<div class="login_tb">
 		    <form method="POST" action="${pageContext.request.contextPath}/US001Servlet" class="login">
-		        <h1 class="title">µn¤J­¶­±</h1>
+		        <h1 class="title">ç™»å…¥é é¢</h1>
 		            
-		           <!-- <label for="username" id="username" class ="username">¨Ï¥ÎªÌ±b¸¹</label> -->
-		        <input type="text" placeholder="½Ğ¿é¤J±b¸¹"  name="username" id="username" class="username">
-		            <!-- <label for="password" id="password" class = "password">¨Ï¥ÎªÌ±K½X</label>  -->
-		        <input type="password" placeholder="½Ğ¿é¤J±K½X" name="password"  id="password" class="password">
+		           <!-- <label for="username" id="username" class ="username">ä½¿ç”¨è€…å¸³è™Ÿ</label> -->
+		        <input type="text" placeholder="è«‹è¼¸å…¥å¸³è™Ÿ"  name="username" id="username" class="username">
+		            <!-- <label for="password" id="password" class = "password">ä½¿ç”¨è€…å¯†ç¢¼</label>  -->
+		        <input type="password" placeholder="è«‹è¼¸å…¥å¯†ç¢¼" name="password"  id="password" class="password">
 		    
-		        <input type="submit" class="send_btn" id="loginBtn" value = "µn¤J">
+		        <input type="submit" class="send_btn" id="loginBtn" value = "ç™»å…¥">
 		
 		    </form>
 		</div>

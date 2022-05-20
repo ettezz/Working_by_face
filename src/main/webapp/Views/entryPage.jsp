@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=BIG5" pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="BIG5">
+<meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="0">
-<title>­º­¶</title>
+<title>é¦–é </title>
 <link href="${pageContext.request.contextPath}/css/navbar.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 </head>
@@ -19,78 +19,78 @@
 
 
 		<div class="menu" style="display: flex">
-			<!--­û¤u-->
+			<!--å“¡å·¥-->
 			<div class="dropdown" id="Employee" style="display: none;">
-				<button class="dropbtn">­Ó¤H¸ê®Æ</button>
+				<button class="dropbtn">å€‹äººè³‡æ–™</button>
 				<div class="dropdown-content">
-					<a href="">­×§ï±K½X</a> <a href="">¥Ó½Ğ¥ğ°²</a> <a href="">¬d¸ß½Ğ°²¬ö¿ı</a> <a href="">¬d¸ß¥X¶Ô¬ö¿ı</a>
+					<a href="">ä¿®æ”¹å¯†ç¢¼</a> <a href="">ç”³è«‹ä¼‘å‡</a> <a href="">æŸ¥è©¢è«‹å‡ç´€éŒ„</a> <a href="">æŸ¥è©¢å‡ºå‹¤ç´€éŒ„</a>
 				</div>
 			</div>
 
-			<!-- ¥DºŞ-->
+			<!-- ä¸»ç®¡-->
 			<div class="dropdown" id="Manager" style="display: none;">
-				<button class="dropbtn">­×§ï®Ö­ã</button>
+				<button class="dropbtn">ä¿®æ”¹æ ¸å‡†</button>
 				<div class="dropdown-content">
-					<a href="">­×§ï¥´¥d¬ö¿ı</a> <a href="">®Ö­ã¥ğ°²</a>
+					<a href="">ä¿®æ”¹æ‰“å¡ç´€éŒ„</a> <a href="">æ ¸å‡†ä¼‘å‡</a>
 				</div>
 			</div>
 			<div class="dropdown" id="Manager2" style="display: none;">
-				<button class="dropbtn">¬d¸ß¥\¯à</button>
+				<button class="dropbtn">æŸ¥è©¢åŠŸèƒ½</button>
 				<div class="dropdown-content">
-					<a href="">¬d¸ß­û¤u¥X¶Ô¬ö¿ı</a> <a href="">¬d¸ß­û¤u½Ğ°²¬ö¿ı</a>
+					<a href="">æŸ¥è©¢å“¡å·¥å‡ºå‹¤ç´€éŒ„</a> <a href="">æŸ¥è©¢å“¡å·¥è«‹å‡ç´€éŒ„</a>
 
 				</div>
 			</div>
 
-			<!-- ¤H¸ê -->
+			<!-- äººè³‡ -->
 
 			<div class="dropdown" id="HR" style="display: none;">
-				<button class="dropbtn">­pºâÁ~¸ê</button>
+				<button class="dropbtn">è¨ˆç®—è–ªè³‡</button>
 				<div class="dropdown-content">
-					<a href="">­pºâ¤ëÁ~</a> <a href="">­pºâ®ÉÁ~</a>
+					<a href="">è¨ˆç®—æœˆè–ª</a> <a href="">è¨ˆç®—æ™‚è–ª</a>
 				</div>
 
 			</div>
 			<div class="dropdown" id="HR2" style="display: none">
-				<button class="dropbtn">¸ê®ÆºûÅ@</button>
+				<button class="dropbtn">è³‡æ–™ç¶­è­·</button>
 				<div class="dropdown-content">
-					<a href="">·s¼W­û¤u¸ê®Æ</a> <a href="">­×§ï­û¤u¸ê®Æ</a> <a href="">¬d¸ß­û¤u¸ê®Æ</a> <a href="">ºûÅ@Á~¸ê³W«h</a> <a href="">§ë«O¯Å¶Z</a>
+					<a href="">æ–°å¢å“¡å·¥è³‡æ–™</a> <a href="">ä¿®æ”¹å“¡å·¥è³‡æ–™</a> <a href="">æŸ¥è©¢å“¡å·¥è³‡æ–™</a> <a href="">ç¶­è­·è–ªè³‡è¦å‰‡</a> <a href="">æŠ•ä¿ç´šè·</a>
 				</div>
 			</div>
 			<div class="dropdown" id="HR3" style="display: none;">
-				<button class="dropbtn">¶×¥X¥\¯à</button>
+				<button class="dropbtn">åŒ¯å‡ºåŠŸèƒ½</button>
 				<div class="dropdown-content">
-					<a href="">¶×¥X¥X¶Ô¬ö¿ı</a> <a href="">¶×¥X½Ğ°²¬ö¿ı</a> <a href="">¶×¥XÁ~¸ê±ø</a>
+					<a href="">åŒ¯å‡ºå‡ºå‹¤ç´€éŒ„</a> <a href="">åŒ¯å‡ºè«‹å‡ç´€éŒ„</a> <a href="">åŒ¯å‡ºè–ªè³‡æ¢</a>
 				</div>
 
 			</div>
 		</div>
 
-		<!-- µn¤J­û¤u¸ê°T -->
+		<!-- ç™»å…¥å“¡å·¥è³‡è¨Š -->
 		<div class="Employee">
 			<div class="personalinformation">
-				<p>­û¤u½s¸¹:</p>
+				<p>å“¡å·¥ç·¨è™Ÿ:</p>
 				<%
 				out.println("<p>" + session.getAttribute("USER_ID") + "</p>");
 				%>
-				<p>©m¦W:</p>
+				<p>å§“å:</p>
 				<%
 				out.println("<p>" + session.getAttribute("USER_NAME") + "</p>");
 				%>
-				<p>¨­¤À:</p>
+				<p>èº«åˆ†:</p>
 				<%
 				out.println("<p>" + session.getAttribute("DEPARTMENT") + "</p>");
 				%>
 			</div>
 		</div>
 
-		<!-- µn¥X -->
+		<!-- ç™»å‡º -->
 
 		<div class="Signout">
 			<!--<form action="${pageContext.request.contextPath}/Controllers/US002Servlet" method="POST">
 				
 			</form>-->
-			<button class="Signoutbtn" onclick="logout()">µn¥X</button>
+			<button class="Signoutbtn" onclick="logout()">ç™»å‡º</button>
 		</div>
 
 
@@ -104,7 +104,7 @@
 <%
 String roleType = session.getAttribute("ROLE_TYPE").toString();
 switch (roleType) {
-	//¥DºŞ
+	//ä¸»ç®¡
 	case "A" :
 		out.println(
 		"<script type='text/javascript'>document.getElementById('Employee').style.display='block';</script>");
@@ -114,7 +114,7 @@ switch (roleType) {
 		"<script type='text/javascript'>document.getElementById('Manager2').style.display='block';</script>");
 		break;
 
-	//¤H¸ê
+	//äººè³‡
 	case "B" :
 		out.println(
 		"<script type='text/javascript'>document.getElementById('Employee').style.display='block';</script>");
@@ -123,14 +123,14 @@ switch (roleType) {
 		out.println("<script type='text/javascript'>document.getElementById('HR3').style.display='block';</script>");
 		break;
 
-	//­û¤u	
+	//å“¡å·¥	
 	case "C" :
 		out.println(
 		"<script type='text/javascript'>document.getElementById('Employee').style.display='block';</script>");
 		break;
 
 	default :
-		out.println("<script type='text/javascript'>alert('¨S¦³²Å¦Xªº±ø¥ó');</script>");
+		out.println("<script type='text/javascript'>alert('æ²’æœ‰ç¬¦åˆçš„æ¢ä»¶');</script>");
 }
 
 out.println("<script type='text/javascript'>window.onload = navbarSelect (" + roleType + ");</script>");
@@ -149,7 +149,7 @@ out.println("<script type='text/javascript'>window.onload = navbarSelect (" + ro
 		response.addCookie(cleanCookie);%>
 	}
 
-    /*var ROLE_TYPE = 'A';//§ì¨ú¸ê®Æ
+    /*var ROLE_TYPE = 'A';//æŠ“å–è³‡æ–™
 
     function navbarSelect(ROLE_TYPE) {
 
@@ -158,20 +158,20 @@ out.println("<script type='text/javascript'>window.onload = navbarSelect (" + ro
 			    document.getElementById("Employee").style.display = "block";
 
 			    break;
-		    case 'A'://¥DºŞ
+		    case 'A'://ä¸»ç®¡
 			    document.getElementById("Employee").style.display = "block";
 			    document.getElementById("Manager").style.display = "block";
 			    document.getElementById("Manager2").style.display = "block";
 
 			    break;
-		    case 'B'://¤H¸ê
+		    case 'B'://äººè³‡
 			    document.getElementById("Employee").style.display = "block";
 			    document.getElementById("HR").style.display = "block";
 			    document.getElementById("HR2").style.display = "block";
 			    document.getElementById("HR3").style.display = "block";
 			    break;
 		    default:
-			    alert('¨S¦³²Å¦Xªº±ø¥ó');
+			    alert('æ²’æœ‰ç¬¦åˆçš„æ¢ä»¶');
 	    }
 
     }
