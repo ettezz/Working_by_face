@@ -25,7 +25,7 @@
 			session.setAttribute("DEPARTMENT", DEPARTMENT);
 			
 			out.println("<script type='text/javascript'>alert('歡迎 " + USER_NAME + " 登入');</script>");
-			//跳轉網頁
+			//跳轉網頁//
 			out.println("<script type='text/javascript'>window.location.href='./Views/entryPage.jsp';</script>");
 		}
 		else{
