@@ -11,7 +11,7 @@
 <link href="${pageContext.request.contextPath}/css/navbar.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 </head>
-<body>
+<body style="margin: 0; padding: 0;">
 	<div class="navbar">
 		<div id="logo">
 			<img src="${pageContext.request.contextPath}/image/logo.png" alt="">
@@ -31,7 +31,7 @@
 			<div class="dropdown" id="Manager" style="display: none;">
 				<button class="dropbtn">修改核准</button>
 				<div class="dropdown-content">
-					<a href="">修改打卡紀錄</a> <a href="">核准休假</a>
+					<a href="">修改打卡紀錄</a> <a href="" onclick="changePage('approvedLeave.jsp')">核准休假</a>
 				</div>
 			</div>
 			<div class="dropdown" id="Manager2" style="display: none;">
@@ -86,7 +86,7 @@
 
 		<!-- 登出 -->
 
-		<div class="Signout">
+		<div class="Signout" id="singout">
 			<!--<form action="${pageContext.request.contextPath}/Controllers/US002Servlet" method="POST">
 				
 			</form>-->
@@ -97,7 +97,9 @@
 
 	</div>
 	<!--navbar-->
-	<div style="background-color: #FFFFFF; width: 100%; height: 500px;"></div>
+	<div>
+		<iframe id="iframe" src="" style="width: 100%;height: 800px;"></iframe>
+	</div>
 
 </body>
 
@@ -133,49 +135,8 @@ switch (roleType) {
 		out.println("<script type='text/javascript'>alert('沒有符合的條件');</script>");
 }
 
-out.println("<script type='text/javascript'>window.onload = navbarSelect (" + roleType + ");</script>");
+//out.println("<script type='text/javascript'>window.onload = navbarSelect(" + roleType + ");</script>");
 %>
-<script>
-	function logout() {
-	    window.location = "./login.jsp"
-		<%response.setHeader("Pragma", "No-cache");
-		response.setHeader("Cache-Control", "no-cache");
-		response.setDateHeader("Expires", 0);
-		response.flushBuffer();%>
-			
-		<%Cookie cleanCookie = new Cookie("mycookie", null);
-		cleanCookie.setMaxAge(0);
-		cleanCookie.setPath("/");
-		response.addCookie(cleanCookie);%>
-	}
 
-    /*var ROLE_TYPE = 'A';//抓取資料
 
-    function navbarSelect(ROLE_TYPE) {
-
-	    switch (ROLE_TYPE) {
-		    case 'C':
-			    document.getElementById("Employee").style.display = "block";
-
-			    break;
-		    case 'A'://主管
-			    document.getElementById("Employee").style.display = "block";
-			    document.getElementById("Manager").style.display = "block";
-			    document.getElementById("Manager2").style.display = "block";
-
-			    break;
-		    case 'B'://人資
-			    document.getElementById("Employee").style.display = "block";
-			    document.getElementById("HR").style.display = "block";
-			    document.getElementById("HR2").style.display = "block";
-			    document.getElementById("HR3").style.display = "block";
-			    break;
-		    default:
-			    alert('沒有符合的條件');
-	    }
-
-    }
-
-    window.onload = navbarSelect(ROLE_TYPE);*/
-</script>
 </html>
